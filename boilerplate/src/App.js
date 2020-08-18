@@ -7,6 +7,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import Home from './Views/Home'
+import About from './Views/About'
 
 function App() {
   return (
@@ -15,10 +17,10 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/">
-          <h1 className="font-bold text-2x1"> This is the HomePage</h1>
+          <Home />
         </Route>
         <Route exact path="/about">
-          <h1 className="font-bold text-2x1"> About Us</h1>
+          <About />
         </Route>
       </Switch>
       <Footer />
